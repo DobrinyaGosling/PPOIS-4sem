@@ -1,0 +1,6 @@
+pytest
+pydantic
+pydantic-settings
+PyQt6
+SQLAlchemy>=2.0
+asyncpg

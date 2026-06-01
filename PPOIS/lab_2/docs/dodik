@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<patients>
+  <patient id="1">
+    <patient_full_name>Додик</patient_full_name>
+    <address>ленина</address>
+    <birth_date>2000-01-01</birth_date>
+    <visit_date>2000-07-13</visit_date>
+    <doctor_full_name>Иванов</doctor_full_name>
+    <conclusion>здоров</conclusion>
+  </patient>
+</patients>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виртуальная кафедра</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Виртуальная кафедра</h1>
+
+        <nav class="nav">
+            <button class="nav-btn" onclick="showSection('students')">Студенты</button>
+            <button class="nav-btn" onclick="showSection('teachers')">Преподаватели</button>
+            <button class="nav-btn" onclick="showSection('materials')">Материалы</button>
+            <button class="nav-btn" onclick="showSection('assignments')">Задания</button>
+            <button class="nav-btn" onclick="showSection('tests')">Тесты</button>
+            <button class="nav-btn" onclick="showSection('forum')">Форум</button>
+            <button class="nav-btn" onclick="showSection('lectures')">Лекции</button>
+        </nav>
+
+        <div id="content">
+            <section id="students" class="section hidden">
+                <h2>Студенты</h2>
+                <div class="form-group">
+                    <input type="text" id="studentLogin" placeholder="Логин" />
+                    <input type="text" id="studentName" placeholder="Имя" />
+                    <button onclick="createStudent()">Добавить студента</button>
+                </div>
+                <div id="studentsList" class="list"></div>
+            </section>
+
+            <section id="teachers" class="section hidden">
+                <h2>Преподаватели</h2>
+                <div class="form-group">
+                    <input type="text" id="teacherLogin" placeholder="Логин" />
+                    <input type="text" id="teacherName" placeholder="Имя" />
+                    <button onclick="createTeacher()">Добавить преподавателя</button>
+                </div>
+                <div id="teachersList" class="list"></div>
+            </section>
+
+            <section id="materials" class="section hidden">
+                <h2>Материалы</h2>
+                <div class="form-group">
+                    <input type="text" id="materialTitle" placeholder="Заголовок" />
+                    <textarea id="materialContent" placeholder="Содержание"></textarea>
+                    <button onclick="addMaterial()">Добавить материал</button>
+                </div>
+                <div id="materialsList" class="list"></div>
+            </section>
+
+            <section id="assignments" class="section hidden">
+                <h2>Задания</h2>
+                <div class="form-group">
+                    <input type="text" id="assignmentTitle" placeholder="Название" />
+                    <textarea id="assignmentDesc" placeholder="Описание"></textarea>
+                    <button onclick="addAssignment()">Добавить задание</button>
+                </div>
+                <div id="assignmentsList" class="list"></div>
+                <div id="submissionsList" class="list"></div>
+            </section>
+
+            <section id="tests" class="section hidden">
+                <h2>Тесты</h2>
+                <div class="form-group">
+                    <input type="text" id="testTitle" placeholder="Название теста" />
+                    <button onclick="addQuestion()">Добавить вопрос</button>
+                    <button onclick="createTest()">Создать тест</button>
+                </div>
+                <div id="questionsInput" class="form-group"></div>
+                <div id="testsList" class="list"></div>
+                <div id="attemptsList" class="list"></div>
+            </section>
+
+            <section id="forum" class="section hidden">
+                <h2>Форум</h2>
+                <div class="form-group">
+                    <input type="text" id="threadTitle" placeholder="Название темы" />
+                    <button onclick="createThread()">Создать тему</button>
+                </div>
+                <div id="threadsList" class="list"></div>
+            </section>
+
+            <section id="lectures" class="section hidden">
+                <h2>Лекции</h2>
+                <div class="form-group">
+                    <input type="text" id="lectureTopic" placeholder="Тема лекции" />
+                    <button onclick="scheduleLecture()">Запланировать лекцию</button>
+                </div>
+                <div id="lecturesList" class="list"></div>
+            </section>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

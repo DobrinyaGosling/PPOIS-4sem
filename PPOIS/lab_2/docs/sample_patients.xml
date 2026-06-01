@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<patients>
+  <patient id="1">
+    <patient_full_name>Иванов Иван Иванович</patient_full_name>
+    <address>Минск, ул. Ленина, 10</address>
+    <birth_date>2000-01-02</birth_date>
+    <visit_date>2026-03-01</visit_date>
+    <doctor_full_name>Петров Пётр Петрович</doctor_full_name>
+    <conclusion>Плановый осмотр, состояние удовлетворительное.</conclusion>
+  </patient>
+  <patient id="2">
+    <patient_full_name>Сидорова Анна Сергеевна</patient_full_name>
+    <address>Гродно, пр-т Космонавтов, 25</address>
+    <birth_date>1995-07-14</birth_date>
+    <visit_date>2026-03-05</visit_date>
+    <doctor_full_name>Кузнецов Алексей Викторович</doctor_full_name>
+    <conclusion>Назначено дополнительное обследование.</conclusion>
+  </patient>
+  <patient id="3">
+    <patient_full_name>Ковалёв Дмитрий Олегович</patient_full_name>
+    <address>Брест, ул. Московская, 101</address>
+    <birth_date>1988-11-30</birth_date>
+    <visit_date>2026-03-12</visit_date>
+    <doctor_full_name>Смирнова Елена Павловна</doctor_full_name>
+    <conclusion>Рекомендована повторная консультация через 2 недели.</conclusion>
+  </patient>
+</patients>

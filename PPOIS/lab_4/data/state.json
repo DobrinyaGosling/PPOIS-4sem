@@ -1,0 +1,163 @@
+{
+  "students": {
+    "stu_001": {
+      "student_id": "stu_001",
+      "login": "student1",
+      "name": "Student One"
+    },
+    "stu_002": {
+      "student_id": "stu_002",
+      "login": "student2",
+      "name": "Student Two"
+    },
+    "stu_ad12284f8f": {
+      "student_id": "stu_ad12284f8f",
+      "login": "stud",
+      "name": "ivan"
+    },
+    "stu_d5525796f7": {
+      "student_id": "stu_d5525796f7",
+      "login": "vasya",
+      "name": "Vasili"
+    },
+    "stu_bd4cc74aa5": {
+      "student_id": "stu_bd4cc74aa5",
+      "login": "ivan",
+      "name": "neIvan"
+    }
+  },
+  "teachers": {
+    "tea_001": {
+      "teacher_id": "tea_001",
+      "login": "teacher1",
+      "name": "Teacher One"
+    },
+    "tea_002": {
+      "teacher_id": "tea_002",
+      "login": "teacher2",
+      "name": "Teacher Two"
+    }
+  },
+  "materials": {
+    "mat_001": {
+      "material_id": "mat_001",
+      "title": "Python Basics",
+      "content": "Introduction to Python programming"
+    },
+    "mat_002": {
+      "material_id": "mat_002",
+      "title": "Web Development",
+      "content": "Learn web development with FastAPI"
+    }
+  },
+  "assignments": {
+    "asg_001": {
+      "assignment_id": "asg_001",
+      "title": "Assignment 1",
+      "description": "Write a Python program"
+    },
+    "asg_002": {
+      "assignment_id": "asg_002",
+      "title": "Assignment 2",
+      "description": "Build a web API"
+    }
+  },
+  "submissions": {
+    "sub_001": {
+      "submission_id": "sub_001",
+      "assignment_id": "asg_001",
+      "student_id": "stu_001",
+      "answer": "print('Hello World')",
+      "grade": 95
+    },
+    "sub_002": {
+      "submission_id": "sub_002",
+      "assignment_id": "asg_002",
+      "student_id": "stu_002",
+      "answer": "FastAPI application",
+      "grade": 88
+    }
+  },
+  "tests": {
+    "tst_001": {
+      "test_id": "tst_001",
+      "title": "Math Quiz",
+      "questions": [
+        {
+          "prompt": "What is 2+2?",
+          "options": [
+            "3",
+            "4",
+            "5"
+          ],
+          "correct_index": 1
+        }
+      ]
+    },
+    "tst_002": {
+      "test_id": "tst_002",
+      "title": "Python Quiz",
+      "questions": [
+        {
+          "prompt": "What does print() do?",
+          "options": [
+            "Print text",
+            "Create variable",
+            "Loop"
+          ],
+          "correct_index": 0
+        }
+      ]
+    }
+  },
+  "attempts": {
+    "att_001": {
+      "attempt_id": "att_001",
+      "test_id": "tst_001",
+      "student_id": "stu_001",
+      "answers": [
+        1
+      ],
+      "score": 1
+    },
+    "att_002": {
+      "attempt_id": "att_002",
+      "test_id": "tst_002",
+      "student_id": "stu_002",
+      "answers": [
+        0
+      ],
+      "score": 1
+    }
+  },
+  "threads": {
+    "thr_001": {
+      "thread_id": "thr_001",
+      "title": "General Discussion",
+      "posts": []
+    },
+    "thr_002": {
+      "thread_id": "thr_002",
+      "title": "Course Questions",
+      "posts": [
+        {
+          "author_id": "stu_001",
+          "content": "How to submit assignments?",
+          "created_at": "2026-06-01T10:00:00+00:00"
+        }
+      ]
+    }
+  },
+  "lectures": {
+    "lec_001": {
+      "lecture_id": "lec_001",
+      "topic": "Python Fundamentals",
+      "is_live": false
+    },
+    "lec_002": {
+      "lecture_id": "lec_002",
+      "topic": "Web Development Basics",
+      "is_live": false
+    }
+  }
+}

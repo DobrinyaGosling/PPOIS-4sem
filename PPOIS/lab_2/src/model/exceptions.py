@@ -1,0 +1,3 @@
+class StorageError(RuntimeError):
+    pass
+

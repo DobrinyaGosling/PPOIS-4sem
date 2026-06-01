@@ -1,0 +1,58 @@
+{
+  "window": {
+    "width": 800,
+    "height": 600,
+    "fps": 60,
+    "title": "Asteroids"
+  },
+  "player": {
+    "x": 400,
+    "y": 300,
+    "radius": 15,
+    "rotation_speed": 6,
+    "acceleration": 0.5,
+    "max_velocity": 7,
+    "friction": 0.99
+  },
+  "bullet": {
+    "speed": 7,
+    "lifetime": 120,
+    "damage": 1
+  },
+  "asteroids": {
+    "spawn_interval": 120,
+    "min_spawn_distance": 100,
+    "large": {
+      "size": 30,
+      "health": 3,
+      "speed_range": [1, 3]
+    },
+    "medium": {
+      "size": 15,
+      "health": 2,
+      "speed_range": [2, 4]
+    },
+    "small": {
+      "size": 8,
+      "health": 1,
+      "speed_range": [3, 5]
+    }
+  },
+  "modifiers": {
+    "speed_boost": {
+      "duration": 300,
+      "cooldown": 600,
+      "multiplier": 2.0
+    },
+    "shield": {
+      "duration": 400,
+      "cooldown": 800,
+      "damage_reduction": 3
+    },
+    "slow_motion": {
+      "duration": 200,
+      "cooldown": 600,
+      "slow_factor": 0.5
+    }
+  }
+}
